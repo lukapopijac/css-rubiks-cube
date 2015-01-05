@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Rubik's Cube</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="cube.css">
+		<link rel="stylesheet" type="text/css" href="cuberotation.css">
+	</head>
+    <body>
+		<div class="scene">
+			<div class="cube">
+			
+				<!-- corners -->
+				<div class="cube-layer">
+					<div class="cubie cubie-corner-position-0">
+						<div class="cubie cubie-corner-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-f"></div>
+							<div class="cubie-face face-r cubie-sticker sticker-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-corner-position-1">
+						<div class="cubie cubie-corner-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-l"></div>
+							<div class="cubie-face face-r cubie-sticker sticker-f"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-corner-position-2">
+						<div class="cubie cubie-corner-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-r"></div>
+							<div class="cubie-face face-r cubie-sticker sticker-b"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-corner-position-3">
+						<div class="cubie cubie-corner-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-b"></div>
+							<div class="cubie-face face-r cubie-sticker sticker-l"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-corner-position-4">
+						<div class="cubie cubie-corner-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-d"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-r"></div>
+							<div class="cubie-face face-r cubie-sticker sticker-f"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-corner-position-5">
+						<div class="cubie cubie-corner-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-d"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-f"></div>
+							<div class="cubie-face face-r cubie-sticker sticker-l"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-corner-position-6">
+						<div class="cubie cubie-corner-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-d"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-b"></div>
+							<div class="cubie-face face-r cubie-sticker sticker-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-corner-position-7">
+						<div class="cubie cubie-corner-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-d"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-l"></div>
+							<div class="cubie-face face-r cubie-sticker sticker-b"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- edges -->
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-0">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-f"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-1">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-l"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-2">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-r"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-3">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-b"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-4">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-d"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-f"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-5">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-d"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-l"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-6">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-d"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-r"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-7">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-d"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-b"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-8">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-f"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-r"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-9">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-f"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-l"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-10">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-b"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-r"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-edge-position-11">
+						<div class="cubie cubie-edge-orientation-0">
+							<div class="cubie-face face-u cubie-sticker sticker-b"></div>
+							<div class="cubie-face face-f cubie-sticker sticker-l"></div>
+							<div class="cubie-face face-r"></div>
+							<div class="cubie-face face-l"></div>
+							<div class="cubie-face face-b"></div>
+							<div class="cubie-face face-d"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- middles -->
+				<div class="cube-layer">
+					<div class="cubie cubie-middle-r">
+						<div class="cubie-face face-r cubie-sticker sticker-r"></div>
+						<div class="cubie-face face-l"></div>
+						<div class="cubie-face face-f"></div>
+						<div class="cubie-face face-b"></div>
+						<div class="cubie-face face-u"></div>
+						<div class="cubie-face face-d"></div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-middle-l">
+						<div class="cubie-face face-r"></div>
+						<div class="cubie-face face-l cubie-sticker sticker-l"></div>
+						<div class="cubie-face face-f"></div>
+						<div class="cubie-face face-b"></div>
+						<div class="cubie-face face-u"></div>
+						<div class="cubie-face face-d"></div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-middle-f">
+						<div class="cubie-face face-r"></div>
+						<div class="cubie-face face-l"></div>
+						<div class="cubie-face face-f cubie-sticker sticker-f"></div>
+						<div class="cubie-face face-b"></div>
+						<div class="cubie-face face-u"></div>
+						<div class="cubie-face face-d"></div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-middle-b">
+						<div class="cubie-face face-r"></div>
+						<div class="cubie-face face-l"></div>
+						<div class="cubie-face face-f"></div>
+						<div class="cubie-face face-b cubie-sticker sticker-b"></div>
+						<div class="cubie-face face-u"></div>
+						<div class="cubie-face face-d"></div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-middle-u">
+						<div class="cubie-face face-r"></div>
+						<div class="cubie-face face-l"></div>
+						<div class="cubie-face face-f"></div>
+						<div class="cubie-face face-b"></div>
+						<div class="cubie-face face-u cubie-sticker sticker-u"></div>
+						<div class="cubie-face face-d"></div>
+					</div>
+				</div>
+				<div class="cube-layer">
+					<div class="cubie cubie-middle-d">
+						<div class="cubie-face face-r"></div>
+						<div class="cubie-face face-l"></div>
+						<div class="cubie-face face-f"></div>
+						<div class="cubie-face face-b"></div>
+						<div class="cubie-face face-u"></div>
+						<div class="cubie-face face-d cubie-sticker sticker-d"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+﻿@keyframes rotate {
+  from { transform: rotateX(-30deg) rotateY(0deg); }
+  to { transform: rotateX(330deg) rotateY(1800deg); }
+}
+@-webkit-keyframes rotate {
+  from { transform: rotateX(-30deg) rotateY(0deg); }
+  to { transform: rotateX(330deg) rotateY(1800deg); }
+}
+.cube {
+	-webkit-animation: rotate 120s infinite linear;
+	animation: rotate 120s infinite linear;
+}
