@@ -25,7 +25,9 @@ var layers = {
 	d: {corners: [4, 6, 7, 5], edges: [4, 6, 7, 5]}
 };
 
-function move(turn) {
+
+/** Adds classes to cubies to start animation. */
+function move(turn) { // turn examples: 'r1', 'd2', 'u3'
 	var side = turn[0];
 	var layer = layers[side];
 	var m = document.querySelector('.cubie-middle-' + side);
@@ -44,6 +46,9 @@ function move(turn) {
 	}
 }
 
+
+/**	Updates classes of cubie. This should be called on completion of
+	animation for every cubie that was involved in animation. */
 function updateCubie() {
 	var match = this.className.match(/turn\-(..)/);
 	this.classList.remove('turn');
@@ -80,12 +85,13 @@ function updateCubie() {
 		div.className = div.className.replace(re, '$1' + newVal);
 	}
 }
-var stopMove = false;
+
+
+/**	Generates and executes random move */
 var nextMove = function() {
 	var prevSide = '';
 	var sides = ['u','f','r','l','b','d'];
 	return function() {
-		if(stopMove) return;
 		if(document.querySelector('.cube-layer.turn')) return;
 		var side = prevSide;
 		while(side == prevSide) side = sides[Math.random()*6|0];
@@ -95,10 +101,16 @@ var nextMove = function() {
 	};
 }();
 
-var layerDivs = document.querySelectorAll('.cube-layer');
-for(var i=0; i<layerDivs.length; ++i) {
-	layerDivs[i].addEventListener('transitionend', updateCubie, true);
-	layerDivs[i].addEventListener('transitionend', nextMove, true);
-}
 
+(function() {
+	// add `transitionend` listeners for updating classes and starting next move
+	var layerDivs = document.querySelectorAll('.cube-layer');
+	for(var i=0; i<layerDivs.length; ++i) {
+		layerDivs[i].addEventListener('transitionend', updateCubie, true);
+		layerDivs[i].addEventListener('transitionend', nextMove, true);
+	}
+})();
+
+
+// start the first move
 nextMove();
