@@ -1,5 +1,6 @@
 ﻿body {
 	background: lightgrey;
+	overflow: hidden;
 }
 .scene {
 	margin: 230px auto;
