@@ -2,12 +2,16 @@
 	background: lightgrey;
 	overflow: hidden;
 }
+
 .scene {
 	margin: 230px auto;
 	width: 100px;
 	perspective: 1000px;
 	perspective-origin: 50% 50%;
 }
+@media (max-width: 500px) {.scene {transform: scale(.7);}}
+@media (max-width: 400px) {.scene {transform: scale(.6);}}
+
 .cube {
 	position: relative;
 	transform-style: preserve-3d;
