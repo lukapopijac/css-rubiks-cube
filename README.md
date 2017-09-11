@@ -1,4 +1,4 @@
-﻿CSS Rubik's Cube
+CSS Rubik's Cube
 ================
 
 This is a 3D Rubik's Cube demo made with CSS3.
@@ -9,7 +9,7 @@ CSS3 is extensively used, especially 3D transformations and transitions (animati
 
 JavaScript is used for generating sequence of random moves, and to add/remove classes to/from appropriate elements in order to trigger animations.
 
-Demo is available at [lukapopijac.com/css-rubiks-cube/](http://lukapopijac.com/css-rubiks-cube/).
+**[View Demo](https://lukapopijac.github.io/css-rubiks-cube/)**
 
 License
 -------
