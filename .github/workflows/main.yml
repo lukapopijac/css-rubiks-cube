@@ -17,6 +17,7 @@ jobs:
           git config --global user.email 'luka.popijac@gmail.com'
           git fetch
           git checkout gh-pages
+          rm -r *                   # delete all in this branch
           git checkout master .     # copy all files from master branch
           git add -A
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
