@@ -11,6 +11,7 @@ JavaScript is used for generating sequence of random moves, and to add/remove cl
 
 **[View Demo](https://lukapopijac.github.io/css-rubiks-cube/)**
 
+
 License
 -------
 This software is released under the MIT license.
